@@ -1,16 +1,12 @@
-name: "print hello world"
+name: Print Hello World
+
 on:
-  push:
+  push:
+  workflow_dispatch:
 
 jobs:
-  hello:
-    runs-on: macos-latest
-    steps:
-      - name: Print hello world
-        run: echo "Hello world"
-
-  second-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print hello world
-        run: echo "Hello world"
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world
+        run: echo "Hello world"
